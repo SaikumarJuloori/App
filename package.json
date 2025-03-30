@@ -2,10 +2,12 @@
   "name": "296-react-props-practice",
   "version": "1.0.0",
   "main": "vite.config.js",
-  "scripts": {
-  "preinstall": "chmod -R 755 node_modules/.bin",
+ "scripts": {
+  "start": "vite",
+  "dev": "vite",
   "build": "vite build"
 }
+
 ,
   "keywords": [],
   "author": "",

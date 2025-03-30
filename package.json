@@ -2,13 +2,11 @@
   "name": "296-react-props-practice",
   "version": "1.0.0",
   "main": "vite.config.js",
- "scripts": {
-  "start": "vite",
-  "dev": "vite",
-  "build": "vite build"
-}
-
-,
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

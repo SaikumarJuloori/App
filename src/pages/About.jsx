@@ -1,36 +1,32 @@
 import { motion } from "framer-motion";
+import myImage from "../images/passport size.jpg"; // Replace with your actual image path
 
 const AboutMe = () => {
   return (
-    <div className="flex h-screen bg-gray-900 text-white p-10">
-      {/* Laptop Screen with Animated Code */}
-      <div className="w-1/2 flex justify-center items-center">
-        <motion.div 
-          className="bg-black p-6 rounded-lg shadow-lg w-96 h-64 border-2 border-gray-700"
-          animate={{ scale: [0.9, 1, 0.9] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          <pre className="text-green-400 text-sm">
-            {`const hello = "Welcome!";
-console.log(hello);
+    <div className="container">
+      {/* Profile Image */}
+      <motion.div 
+        className="image-container"
+        whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(255, 255, 255, 0.3)" }}
+        transition={{ duration: 0.3 }}
+      >
+        <img src={myImage} alt="Saikumar Juloori" />
+      </motion.div>
 
-function greet(name) {
-  return \`Hello, \${name}!\`;
-}
-
-greet("Visitor");`}
-          </pre>
-        </motion.div>
-      </div>
-      
-      {/* About Me Section */}
-      <div className="w-1/2 flex flex-col justify-center">
-        <h1 className="text-4xl font-bold mb-4">About Me</h1>
+      {/* About Me Content */}
+      <motion.div 
+        className="content"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-3xl font-bold mb-3">About Me</h1>
         <p className="text-lg text-gray-300">
-          Hi, I'm Saikumar Juloori, a passionate full-stack developer with expertise in React, Node.js, AWS, and more.
+          Hi, I'm <span className="text-blue-400 font-semibold">Saikumar Juloori</span>, a passionate full-stack developer 
+          with expertise in <span className="text-blue-400">React, Node.js, AWS, and more</span>.
           I love building scalable applications and exploring new technologies to create impactful digital solutions.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

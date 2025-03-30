@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "vite.config.js",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    
-  },
+  "preinstall": "chmod -R 755 node_modules/.bin",
+  "build": "vite build"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",

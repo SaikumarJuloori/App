@@ -5,7 +5,12 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
+    "prebuild": "chmod -R 755 node_modules/.bin",
     "build": "vite build"
+  },
+  
+  "engines": {
+    "node": "16.x"
   },
   "keywords": [],
   "author": "",
@@ -21,4 +26,5 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0"
   }
+  
 }

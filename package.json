@@ -2,6 +2,11 @@
   "name": "296-react-props-practice",
   "version": "1.0.0",
   "main": "vite.config.js",
+   
+  
+    "engines": {
+      "node": "18.x"
+    },
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -9,9 +14,7 @@
     "build": "vite build"
   },
   
-  "engines": {
-    "node": "16.x"
-  },
+ 
   "keywords": [],
   "author": "",
   "license": "ISC",

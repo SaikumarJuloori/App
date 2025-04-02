@@ -19,8 +19,8 @@ const Certifications = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <h3>AWS Certified Developer – Associate</h3>
-            <p>Validated expertise in developing, deploying, and debugging cloud-based applications on AWS. Demonstrated proficiency in AWS services, including Lambda, DynamoDB, API Gateway, and best practices for cloud security and cost optimization.</p>
-            <a href="#" className="certificate-link">View Certificate</a>
+  
+            <a href="https://www.credly.com/badges/c65f6fa2-0bde-468f-9410-0f246b1ea33b/linked_in_profile" className="certificate-link">View Certificate</a>
           </motion.div>
 
           <motion.div
@@ -30,7 +30,7 @@ const Certifications = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h3>IBM Full-Stack JavaScript Developer Professional Certificate</h3>
-            <p>Developed expertise in front-end and back-end web development using JavaScript, Node.js, Express.js, and databases. Covered REST APIs, cloud deployment, and DevOps practices.</p>
+           
             <a href="#" className="certificate-link">View Certificate</a>
           </motion.div>
 
@@ -41,8 +41,8 @@ const Certifications = () => {
             transition={{ duration: 0.8, delay: 0.9 }}
           >
             <h3>Meta Front-End Developer Professional Certificate</h3>
-            <p>Gained hands-on experience in React.js, JavaScript (ES6+), UI/UX design, and performance optimization. Learned best practices for responsive web development and accessibility.</p>
-            <a href="#" className="certificate-link">View Certificate</a>
+           
+            <a href="https://coursera.org/share/efe4bf77fdd6fa22a099ba075e6469e8" className="certificate-link">View Certificate</a>
           </motion.div>
         </div>
       </motion.div>

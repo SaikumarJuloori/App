@@ -38,6 +38,7 @@ const Projects = () => {
   };
 
   return (
+    <section id="projects" >
     <motion.div
       className="projects-container"
       initial={{ opacity: 0, scale: 0.9 }}
@@ -74,6 +75,7 @@ const Projects = () => {
         ))}
       </div>
     </motion.div>
+    </section>
   );
 };
 

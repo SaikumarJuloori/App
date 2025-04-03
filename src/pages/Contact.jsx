@@ -1,20 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaLinkedin, FaInstagram, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="p-6 text-center">
       <motion.div
-        className="contact-container"
+        className="contact-container max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2>Contact</h2>
-        <form className="contact-form">
+        <h2 className="text-2xl font-bold mb-4">Contact</h2>
+        <form className="contact-form flex flex-col gap-4">
           <motion.input
             type="text"
             placeholder="Your Name"
+            className="p-2 border rounded-md"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -22,18 +24,22 @@ const Contact = () => {
           <motion.input
             type="email"
             placeholder="Your Email"
+            className="p-2 border rounded-md"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           />
           <motion.textarea
             placeholder="Your Message"
+            className="p-2 border rounded-md"
+            rows="4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
           />
           <motion.button
             type="submit"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
@@ -41,6 +47,41 @@ const Contact = () => {
             Send Message
           </motion.button>
         </form>
+
+        {/* Social Media & Contact Links */}
+        <div className="social-links flex justify-center gap-6 mt-6">
+          <motion.a
+            href="https://www.linkedin.com/in/juloorisai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 text-2xl hover:text-blue-800 transition"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          >
+            <FaLinkedin />
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/your-instagram-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500 text-2xl hover:text-pink-700 transition"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            <FaInstagram />
+          </motion.a>
+          <motion.a
+            href="tel:+1234567890"
+            className="text-green-600 text-2xl hover:text-green-800 transition"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.6 }}
+          >
+            <FaPhone />
+          </motion.a>
+        </div>
       </motion.div>
     </section>
   );

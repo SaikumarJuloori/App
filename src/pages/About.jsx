@@ -3,6 +3,7 @@ import myImage from "../images/passport size.jpg"; // Replace with your actual i
 
 const AboutMe = () => {
   return (
+    <section id="about">
     <div className="container">
       {/* Profile Image */}
       <motion.div 
@@ -28,6 +29,7 @@ const AboutMe = () => {
         </p>
       </motion.div>
     </div>
+    </section>
   );
 };
 
